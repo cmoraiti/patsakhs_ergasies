@@ -1,6 +1,5 @@
 #sygnwmh gia to megethos tou programmatos
 import datetime
-import calendar
 
 mhnas =int(input("Doste ton mhna se arithmo :"))
 if 1 > mhnas or mhnas > 12 :
@@ -11,9 +10,6 @@ if 1 > xronos or xronos > 9999 :
 
 mydate = datetime.date(xronos,mhnas, 1)
 date = mydate.strftime("%A")
-
-calendar.setfirstweekday(6)
-print (calendar.month(xronos,mhnas))
 
 if mhnas == 1 :
     print '{0:^19}'.format("January %s") %(xronos)
